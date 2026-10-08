@@ -4,5 +4,8 @@ students=[
     {"name":"Назым", "group":"ВТиПО-26 А-2"},
 ]
 
-for student in students:
-    print(student["name"], student["group"])
+def show_students():
+    for student in students:
+        print(student["name"], student["group"])
+
+show_students()
