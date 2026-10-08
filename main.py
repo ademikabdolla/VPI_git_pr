@@ -9,3 +9,12 @@ def show_students():
         print(student["name"], student["group"])
 
 show_students()
+
+def search_students(name):
+    for student in students:
+       if student["name"].lower() == name.lower():
+            print("Табылды:", student["name"], student["group"])
+            return
+    print("Студент табылмады")
+
+search_students("Әдемі")
