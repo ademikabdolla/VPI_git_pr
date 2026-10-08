@@ -18,3 +18,11 @@ def search_students(name):
     print("Студент табылмады")
 
 search_students("Әдемі")
+
+
+def add_student(name, group):
+    students.append({"name": name, "group": group})
+    print("Қосылды:", name, group)
+
+add_student("Сымбат", "ВТиПО-26 А-2")
+show_students()
